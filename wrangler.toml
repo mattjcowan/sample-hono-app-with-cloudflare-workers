@@ -10,11 +10,11 @@ compatibility_date = "2024-12-16"
 [[d1_databases]]
 binding = "DB"
 database_name = "hono-app-db"
-database_id = "${CF_D1_DATABASE_ID}"
+database_id = "aea74e28-1a98-427b-a107-006036fbfd3e"
 
 [[kv_namespaces]]
 binding = "TODO_CACHE"
-id = "${CF_KV_NAMESPACE_ID}"
+id = "bb0b43af3b664ade934b2d935af5763d"
 
 # [[r2_buckets]]
 # binding = "MY_BUCKET"
@@ -26,3 +26,6 @@ id = "${CF_KV_NAMESPACE_ID}"
 # [observability]
 # enabled = true
 # head_sampling_rate = 1
+
+[observability.logs]
+enabled = true

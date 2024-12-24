@@ -78,14 +78,22 @@ npx wrangler secret put CF_IMAGES_ACCOUNT_HASH
 
 ## Getting Started
 
-To run the app in development:
+### Run the app in development
 
 ```bash
 npm install
 npm run dev
 ```
 
-To deploy the app to Cloudflare:
+### Deploy the app to Cloudflare
+
+Migrate the database schema remotely.
+
+```bash
+npx wrangler d1 execute hono-app-db --remote --file=./database/schema.sql
+```
+
+Deploy the app.
 
 ```bash
 npm run deploy

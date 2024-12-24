@@ -31,7 +31,9 @@ async function invalidateCache(kv: KVNamespace) {
   await kv.delete(CACHE_KEY)
 }
 
-app.get('/', landingPageHandler);
+app.get('/', (c) => {
+  return landingPageHandler(c)
+});
 
 // GET all todos
 app.get('/todos', async (c) => {

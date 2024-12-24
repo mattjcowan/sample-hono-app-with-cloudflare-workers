@@ -1,5 +1,5 @@
 import { Context } from 'hono'
-import { html } from 'hono/html'
+// import { html } from 'hono/html'
 
 export function landingPageHandler(c: Context) {
     const htmlContent = `
